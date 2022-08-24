@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block</title>
+    <style>
+        /* 3 types of display : inline, block, inline block*/
+        li {
+            display: inline;
+        }
+        li a {
+            text-decoration: none;
+            padding-right: 20px;
+        }
+        img {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .card {
+            width: 33%;
+            display: inline-block;
+            background: thistle;
+            border: violet 2px solid;
+            padding-right: 15px;
+            margin: 10px auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Software Engineering</a></li>
+        <li><a href="#">Cybersecurity</a></li>
+        <li><a href="#">Cloud Architect</a></li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <img src="/img.jpg" width="300px" height="200px">
+    <img src="/img.jpg" width="300px" height="200px">
+
+    <div class="card">
+        <h2>Headings</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</p>
+    </div>
+    <div class="card">
+        <h2>Headings</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</p>
+    </div>
+    <div class="card">
+        <h2>Headings</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, dolorum?</p>
+    </div>
+
+</body>
+</html>

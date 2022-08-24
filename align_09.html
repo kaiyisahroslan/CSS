@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+
+        /* How to center the content (container) on the page */
+        /* Step 1 : wrap the content in a div (with id or class) 
+        /* Step 2 : set the width and keep the margin auto */
+
+        /* note : margin auto set the same amounth to the both sides and push content 
+        the to the middle */
+
+        .main {
+            /* note : max-width will make it responsive on mobile */
+            max-width: 900px;
+            margin: auto;
+        }
+        .card {
+            background: lightblue;
+            border: black 1px solid;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* How to align text (by default its align to the left) */
+        .card p {
+            text-align: center;
+            /* It makes the text justify to the content */
+            text-align: justify;
+        }
+        .card h2 {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div id="home" class="card">
+            <h2>Software</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ad sed, 
+                commodi aperiam nobis inventore.</p>
+        </div>
+
+        <div id="about" class="card">
+            <h2>Software</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ad sed, 
+                commodi aperiam nobis inventore.</p>
+        </div>
+
+        <div id="contact" class="card">
+            <h2>Software</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque ad sed, 
+                commodi aperiam nobis inventore.</p>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- get fonts online : fonts.google.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" 
+    rel="stylesheet">
+    <title>Fonts</title>
+    <style>
+        /* Check for web safe fonts */
+        /* HTML default font size is 16px */
+        /* px : 1px = 1.96 of 1 inch (Absolute) */
+        /* rem : to the font size of the root element (HTML is the root element) */
+        /* em : to the font size of the parent element (relative) */
+        /* vw : to the 1% of the viewport width (relative) */
+        /* vh : to the 1% of the viewport height (relative) */
+        /* % : to the parent element (relative) */
+
+        body{
+            font-family:  'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6rem;
+        }
+        main{
+            font-size: 20px;
+            background: darkgray;
+            padding: 10px;
+        }
+        /* to change some words */
+        /* if want to have more than 1 span, give them id */
+        #software p span {
+            font-size: 25px;
+            color: darkred;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Welcome to AAA</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum cum odit tempore, 
+            error facere mollitia.</p>
+    </div>
+    <div id="software">
+        <h2>Software Engineering</h2>
+        <p>Lorem ipsum dolor <span>sit amet consectetur</span>  adipisicing elit. Sequi fuga 
+            adipisci suscipit numquam repellat? Iste.</p>
+    </div>
+</body>
+</html>

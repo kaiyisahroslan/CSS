@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* Position values
+        static : not affected by (tblr) properties and values
+        relative : affected by (tblr) properties and values
+        sticky : its positiond based on the scroll bar
+        fixed : its positiond based on the browser
+        absolute : its positiond based on the parent element
+        (parent element should be always relative) */
+
+        body {
+            height: 5000px;
+        }
+
+        .card {
+            width: 200px;
+            height: 200px;
+        }
+        #card-1 {
+            background: coral;
+            position: relative;
+            /* pushed down from the top */
+            top: 100px;
+            /* pushed from the left */
+            left: 100px;
+            /* to push to the front (bring to front) */
+            z-index: 1;
+        }
+        .container  {
+            background: cornflowerblue;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        #card-2 {
+            background: crimson;
+            position: absolute;
+            top: 150px;
+            left: 100px;
+        }
+        #card-3 {
+            background: darkkhaki;
+            position: absolute;
+            bottom: 100px;
+            right: 100px;
+        }
+        #card-4 {
+            position: fixed;
+            background: lightpink;
+        }
+        #card-5 {
+            background: lime;
+            position: sticky;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="card-1" class="card"></div>
+
+    <div class="container">
+        <div id="card-2" class="card"></div>
+        <div id="card-3" class="card"></div>
+    </div>
+
+    <div id="card-4" class="card"></div>
+    <div id="card-5" class="card"></div>
+</body>
+</html>

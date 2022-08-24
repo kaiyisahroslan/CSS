@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background</title>
+    <style>
+        #home   {
+            background-color: rgb(239, 192, 192);
+
+            border-color: rgb(234, 89, 28);
+            border-style: double;
+            border-width: 3px;
+
+            /* simpler way to do it */
+            border: 4px solid green;
+            /* to make the corner curvy */
+            border-radius: 10px;
+        }
+        #about  {
+            background: #ffe4e1;
+            /* color of the font */
+            color: #000000;     
+            border-top: #7a1717 4px dotted;
+        }
+        #contact    {
+            background-image: url(./img.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            
+            background: url(./img.jpg) no-repeat center center/cover;
+
+            width: 400px;
+            height: 300px;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="home">
+        <h2>Home</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam incidunt hic sit recusandae deleniti molestias.</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam incidunt hic sit recusandae deleniti molestias.</p>
+    </div>
+    <div id="contact">
+        <h2>Contact</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam incidunt hic sit recusandae deleniti molestias.</p>
+    </div>
+</body>
+</html>
